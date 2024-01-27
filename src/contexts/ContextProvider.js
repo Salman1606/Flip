@@ -22,6 +22,7 @@ export const ContextProvider = ({ children }) => {
     const [isClicked, setIsClicked] = useState(initialState)
     const [screenSize, setScreenSize] = useState(windowSize)
     const [currentColor, setCurrentColor] = useState(previousColor ? previousColor : '#03C9D7')
+    console.log(previousColor);
     const [currentMode, setCurrentMode] = useState(previousMode ? previousMode : 'Light')
     const [themeSetting, setThemeSetting] = useState(false)
 

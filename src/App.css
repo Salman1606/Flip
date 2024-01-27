@@ -6,6 +6,7 @@
 .nav-item,
 .navbar {
   z-index: 10000;
+  position: sticky;
 }
 @media  screen and (max-width:800px) {
   .sidebar{
@@ -44,4 +45,8 @@
 
 .e-input-group:not(.e-float-icon-left), .e-input-group.e-success:not(.e-float-icon-left), .e-input-group.e-warning:not(.e-float-icon-left), .e-input-group.e-error:not(.e-float-icon-left), .e-input-group.e-control-wrapper:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-success:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-warning:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left){
   border: none;
+}
+
+.{
+  background-color:  #0E131B;
 }

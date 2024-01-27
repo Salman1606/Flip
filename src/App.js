@@ -16,8 +16,15 @@ const App = () => {
     const { activeMenu, setThemeSetting, themeSetting, currentColor, currentMode } = useStateContext()
 
     return (
-        <div className={currentMode === 'Dark' ? 'dark' : ''}>
+        <div className={currentMode === 'Dark' ? 'dark realtive' : 'realtive'}>
             <BrowserRouter>
+
+
+                {/* navbar */}
+                <div className="sticky top-0 md:static bg-[#121C23] h-[72px] navbar w-full">
+                    <Navbar />
+                </div>
+
                 <div className="flex relative dark:bg-main-dark-bg">
                     <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
                         <TooltipComponent content='Settings' position='TopCenter'>
@@ -27,6 +34,10 @@ const App = () => {
                         </TooltipComponent>
                     </div>
 
+
+
+
+
                     <div className={`dark:bg-secondary-dark-bg transition-all ${activeMenu ? `w-72 fixed sidebar bg-white` : `w-0`} `}
                     >
                         <Sidebar />
@@ -35,9 +46,9 @@ const App = () => {
                     <div className={`dark:bg-main-dark-bg bg-main-bg min-h-screen w-full ${activeMenu ? ' md:ml-72' : 'flex-2'}`
                     }>
 
-                        <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
+                        {/* <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
                             <Navbar />
-                        </div>
+                        </div> */}
 
 
 
