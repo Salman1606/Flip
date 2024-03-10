@@ -22,7 +22,9 @@ const App = () => {
 
                 {/* navbar */}
                 <div className="sticky top-0 md:static bg-[#121C23] h-[72px] navbar w-full">
-                    <Navbar />
+                    <div>
+                        <Navbar />
+                    </div>
                 </div>
 
                 <div className="flex relative dark:bg-main-dark-bg">
